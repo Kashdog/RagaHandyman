@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<script>
+	var BASE_URL = 'https\u003A\u002F\u002Fcricut.com\u002Fen_us\u002F';
+	var require = {
+		'baseUrl': 'https\u003A\u002F\u002Fdj8a12g4tkdh0.cloudfront.net\u002Fstaticfiles\u002Fversion1624897265\u002Ffrontend\u002FCricut\u002FRally\u002Fen_US'
+	};
+	</script>
+	<meta charset="utf-8">
+	<title>Handyman</title>
+	<link rel="stylesheet" type="text/css" media="print" href="css/print.min.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/overwrite.min.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/geo-location.min.css">
+	<script type="text/javascript" src="js/require.min.js"></script>
+	<script type="text/javascript" src="js/requirejs-min-resolver.min.js"></script>
+	<script type="text/javascript" src="js/mixins.min.js"></script>
+	<script type="text/javascript" src="js/requirejs-config.min.js"></script>
+	<script type="text/javascript" src="js/shareasale.min.js"></script>
+</head>
+
+<body data-container="body" class="cms-cricut-joy cms-page-view page-layout-cricut-cms"> <a class="action skip contentarea" href="#contentarea"><span> Skip to Content</span></a>
+
+	<header class="rally-navigation navigation">
+		<nav class="main-nav">
+			<div class="main-content wrapper">
+				<div class="mainNavLeft"> <span id="nav-title" class="visually-hidden">Main navigation</span>
+					<button class="mobile-menu-button" aria-expanded="false">
+						<svg width="22" height="12" viewBox="0 0 22 12" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path stroke-width="1.5" stroke="black" d="M0,1.25 C7.33333,1.25 14.66667,1.25 22,1.25 " />
+							<path stroke-width="1.5" stroke="black" d="M0,6.25 C7.33333,6.25 14.66667,6.25 22,6.25 " />
+							<path stroke-width="1.5" stroke="black" d="M0,11.25 C7.33333,11.25 14.66667,11.25 22,11.25 " />
+						</svg><span class="visually-hidden">Toggle Nav</span></button>
+					<div class="logo-home">
+						<a href="https://cricut.com/en_us/" title="Cricut&#x20;Home" class="p-bold">Handyman</a>
+					</div>
+				</div>
+				<div class="links">
+					<div class="widget block block-static-block">
+						<ul class="desktop-links links">
+							<li> <a href="https://cricut.com/en_us/stories" class="small-bold">Stories</a> </li>
+						</ul>
+					</div>
+					<div class="widget block block-static-block"></div>
+				</div>
+				<div class="mainNavRight"><a href="https://cricut.com/en_us/shop" class="small-bold shop-link">Book</a></div>
+			</div>
+			<div class="mobile-drop-down">
+				<div class="widget block block-static-block">
+					<ul class="mobile-links links">
+						<li> <a href="https://cricut.com/en_us/stories" class="mobile-nav-link">Stories</a> </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="page-wrapper">
+		<main id="maincontent" class="page-main">
+			<div class="page messages">
+				<div data-placeholder="messages"></div>
+				<div data-bind="scope: 'messages'">
+					<!-- ko if: cookieMessages && cookieMessages.length > 0 -->
+					<div role="alert" data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">
+						<div data-bind="attr: { class: 'message-' + message.type + ' ' + message.type + ' message', 'data-ui-id': 'message-' + message.type }">
+							<div data-bind="html: $parent.prepareMessageForHtml(message.text)"></div>
+						</div>
+					</div>
+					<!-- /ko -->
+					<!-- ko if: messages().messages && messages().messages.length > 0 -->
+					<div role="alert" data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">
+						<div data-bind="attr: { class: 'message-' + message.type + ' ' + message.type + ' message', 'data-ui-id': 'message-' + message.type }">
+							<div data-bind="html: $parent.prepareMessageForHtml(message.text)"></div>
+						</div>
+					</div>
+					<!-- /ko -->
+				</div>
+				<script type="text/x-magento-init"> { "*": { "Magento_Ui/js/core/app": { "components": { "messages": { "component": "Magento_Theme/js/view/messages" } } } } }</script>
+			</div>
+			<div class="cms-columns">
+				<div class="column main">
+					<script>
+					require(['jquery', 'Magento_Customer/js/model/customer', 'jquery/jquery.cookie', 'mage/mage'], function($, customer) {
+						$(document).on('click', '.cc-btn.cc-dismiss', function() {
+							$.cookie("cookie_info_status", 1);
+							validateCookieInfo();
+						});
+
+						function validateCookieInfo() {
+							var cookie_status = $.cookie("cookie_info_status");
+							if(cookie_status === "1") {
+								$(".cc-window").hide();
+							} else {
+								(function(k, r, f, q) {
+									let b = r.createElement(f);
+									let c = r.getElementsByTagName(f)[0];
+									b.async = 1;
+									b.src = q;
+									c.parentNode.insertBefore(b, c);
+								})(window, document, 'script', 'https://staticcontent.cricut.com/a/cookie-consent/cookie-consent.min.js');
+							}
+						}
+						validateCookieInfo();
+					});
+					</script>
+					<input name="form_key" type="hidden" value="VaFQNwY4MXyionYp">
+					<script type="text/x-magento-init"> { "*": { "Magento_Customer/js/section-config": { "sections": {"stores\/store\/switch":["*"],"stores\/store\/switchrequest":["*"],"directory\/currency\/switch":["*"],"*":["messages"],"customer\/account\/logout":["*","recently_viewed_product","recently_compared_product","persistent"],"customer\/account\/loginpost":["*"],"customer\/account\/createpost":["*"],"customer\/account\/editpost":["*"],"customer\/ajax\/login":["checkout-data","cart","captcha"],"catalog\/product_compare\/add":["compare-products","gtm"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart","ammessages"],"sales\/order\/reorder":["cart","ammessages"],"checkout\/cart\/add":["cart","directory-data","ammessages","gtm"],"checkout\/cart\/delete":["cart","ammessages","gtm"],"checkout\/cart\/updatepost":["cart","ammessages"],"checkout\/cart\/updateitemoptions":["cart","ammessages"],"checkout\/cart\/couponpost":["cart","ammessages"],"checkout\/cart\/estimatepost":["cart","ammessages"],"checkout\/cart\/estimateupdatepost":["cart","ammessages"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items","ammessages"],"checkout\/sidebar\/removeitem":["cart","ammessages","gtm"],"checkout\/sidebar\/updateitemqty":["cart","ammessages"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","last-ordered-items","instant-purchase","ammessages","gtm"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","ammessages","gtm"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data","ammessages"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data","instant-purchase","ammessages"],"customer\/address\/*":["instant-purchase"],"customer\/account\/*":["instant-purchase"],"vault\/cards\/deleteaction":["instant-purchase"],"paypal\/express\/placeorder":["cart","checkout-data","ammessages"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data","ammessages"],"paypal\/express\/onauthorization":["cart","checkout-data","ammessages"],"persistent\/index\/unsetcookie":["persistent"],"review\/product\/post":["review"],"wishlist\/index\/add":["wishlist","gtm"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart","gtm"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart","gtm"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"],"aw_store_credit\/cart\/remove":["cart"],"rest\/*\/v1\/carts\/*\/apply-aw-store-credit":["cart"],"rest\/*\/v1\/carts\/*\/remove-aw-store-credit":["cart"],"amasty_promo\/cart\/add":["cart","ammessages"],"braintree\/paypal\/placeorder":["ammessages"],"authorizenet\/directpost_payment\/place":["ammessages"],"multishipping\/checkout\/overviewpost":["ammessages"],"store\/store\/switchaction":["cart"],"checkout\/cart\/configure":["gtm"],"rest\/*\/v1\/guest-carts\/*\/shipping-information":["gtm"],"rest\/*\/v1\/carts\/*\/shipping-information":["gtm"]}, "clientSideSections": ["checkout-data","cart-data"], "baseUrls": ["https:\/\/cricut.com\/en_us\/"], "sectionNames": ["messages","customer","compare-products","last-ordered-items","cart","directory-data","captcha","instant-purchase","loggedAsCustomer","persistent","review","wishlist","ammessages","gtm","recently_viewed_product","recently_compared_product","product_data_storage","paypal-billing-agreement"] } } }</script>
+					<script type="text/x-magento-init"> { "*": { "Magento_Customer/js/customer-data": { "sectionLoadUrl": "https\u003A\u002F\u002Fcricut.com\u002Fen_us\u002Fcustomer\u002Fsection\u002Fload\u002F", "expirableSectionLifetime": 60, "expirableSectionNames": ["cart","persistent"], "cookieLifeTime": "1209600", "updateSessionUrl": "https\u003A\u002F\u002Fcricut.com\u002Fen_us\u002Fcustomer\u002Faccount\u002FupdateSession\u002F" } } }</script>
+					<script type="text/x-magento-init"> { "*": { "Magento_Customer/js/invalidation-processor": { "invalidationRules": { "website-rule": { "Magento_Customer/js/invalidation-rules/website-rule": { "scopeConfig": { "websiteId": "1" } } } } } } }</script>
+					<script type="text/x-magento-init"> { "body": { "pageCache": {"url":"https:\/\/cricut.com\/en_us\/page_cache\/block\/render\/page_id\/213\/","handles":["default","cms_page_view","cms_page_view_id_cricut-joy"],"originalRequest":{"route":"cms","controller":"page","action":"view","uri":"\/en_us\/cricut-joy"},"versionCookieName":"private_content_version"} } }</script>
+					<div class="widget block block-static-block"></div>
+					<div class="widget block block-static-block">
+						<style>
+						.textural-video.text-black {
+							color: #000;
+						}
+						</style>
+						<div id="content">
+							<div class="sticky-bar">
+								<div class="sticky-bar-content-wrapper wrapper">
+									<div class="sticky-bar-content">
+										<div class="sticky-title">
+											<h6 class="desktop-sticky-title">Handyman</h6>
+											<button class="mobile-sticky-list-button no-compare"> <span>Cricut&nbsp;Joy</span>
+												<svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M12.8191 1L6.90954 6L0.999984 0.999999" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg>
+											</button>
+										</div> <a class="pill-button black " data-ga-events="{" eventCategory ":"Shop ","eventAction ":"Click ","eventLabel ":"joy-shopnow ","eventNonInteractionHit ":"FALSE ","event ":"gaEvent "}" href="#">Call Now</a> </div>
+								</div>
+							</div>
+							<section class="hero hero-product product-hero-standard">
+								<div class="hero-inner">
+									<div class="wrapper">
+										<div class="grid-container">
+											<h1 class="product-title h0">Quick Fixes in minutes.</h1>
+											<div class="product-image">
+												<picture>
+													<source type="image/webp" srcset="images/hammer.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px), (min-resolution: 192dpi) and (min-width: 641px)">
+                                                    <source srcset="images/hammer.png" media="(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px), (min-resolution: 192dpi) and (min-width: 641px)"> <img src="images/hammer.png" alt="Cricut Joy Machine" data-max-width-style="max-width: min(640px, 100%);"> </picture>    
+                                            </div>
+										</div>
+									</div>
+									<div class="wrapper">
+										<div class="grid-container">
+											<div class="copy-cta-container">
+												<h5 class>With my Handyman services it's a snap to fix all your mechanical needs.</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="joy-cards">
+								<div class="wrapper">
+									<div class="grid-container">
+										<div class="card-text">
+											<h3 class="card-title">Get your needs met</h3>
+											<p class="card-copy small">Get the perfect services at a competitive market rate</p>
+										</div>
+										<div class="cards">
+											<div class="card-col card-left-col">
+												<img class="card-image" src="images/joy-card1.png" alt="A pink and white card with a heart, circle, and star pattern on it.">
+												<img class="card-image" src="images/joy-card2.png" alt="A blue and white card with illustrated candles on it.">
+												<img class="card-image" src="images/joy-card3.png" alt="A green card with an illustrated dinosaur with a party hat and holding a gift.">
+											</div>
+											<div class="card-col card-center-col">
+												<img class="card-image" src="images/joy-card4.png" alt="A blue card with an illustated elephant holding some balloons.">
+												<img class="card-image" src="images/joy-card5.png" alt="A yellow and white card with an house cut and illustations.">
+												<img class="card-image" src="images/joy-card6.png" alt="A red and pink card with an illustated envelope and hearts.">
+											</div>
+											<div class="card-col card-right-col">
+												<img class="card-image" src="images/joy-card7.png" alt="A black and white card with an a plant-looking shape cut out of it.">
+												<img class="card-image" src="images/joy-card8.png" alt="A brown and pink card with an a happy cup of to-go coffee cut out.">
+												<img class="card-image" src="images/joy-card9.png" alt="A blue card with an illustated elephant holding some balloons.">
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="joy-long-cut">
+								<div class="wrapper">
+									<div class="grid-container">
+										<div class="long-cut-text">
+											<h2 class="long-cut-title">Beyond your expectations.</h2>
+											<p class="long-cut-copy"></p>
+										</div>
+									</div>
+									<div class="long-cut-visual"> <img class="long-cut-image" src="images/tapelong.png" alt="Cricut Joy cutting a long vinyl cut."> </div>
+								</div>
+							</section>
+							<section class="gallery horizontal-gallery">
+								<div class="wrapper">
+									<div class="gallery-content">
+										<div class="gallery-slider grid-container">
+											<div class="gallery-text">
+												<div>
+													<h5 class="gallery-title">Trusted by your neighborhood</h5>
+													<p class="small">See my client's satisfaction</p> <a class="pill-button black " href="https://cricut.com/en_us/press">Read More</a> </div>
+											</div>
+											<div class="gallery-slides">
+												<div class="gallery-slides-inner">
+													<div>
+														<div class="gallery-slide text-only-slide">
+															<div class="horizontal-gallery-cut shamrock">
+																<svg viewBox="0 0 356 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M356 71L72 -2V-71H356V71Z" fill="#00237D" /> </svg>
+															</div>
+															<p class="text-only testimonial">Great Service</p>
+															<div class="gallery-tag-container">
+																<div class="tag">
+																	<div class="tag-image"> <img src="fonts/avatar1.svg" alt> </div>
+																	<div class="tag-text">
+																		<p class="small-bold">Adam</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="gallery-slide text-only-slide">
+															<div class="horizontal-gallery-cut cricut-green">
+																<svg viewBox="0 0 356 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M187.385 13.2985C140.2 46.5448 0 66 0 66L0 -66H216.944V-40.8806C216.944 -40.8806 219.656 -9.43888 187.385 13.2985Z" fill="#00237D" /> </svg>
+															</div>
+															<p class="text-only testimonial">Quick and Efficient</p>
+															<div class="gallery-tag-container">
+																<div class="tag">
+																	<div class="tag-image"> <img src="fonts/avatar5.svg" alt> </div>
+																	<div class="tag-text">
+																		<p class="small-bold">Tom</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="gallery-slide text-only-slide">
+															<div class="horizontal-gallery-cut forest">
+																<svg viewBox="0 0 356 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M-2.5 72C110.07 -9.71682 294.5 -1.6364 294.5 -1.6364L304 -61.0909L-96 -61.0909L-96 228.545C-96 228.545 -65 117.37 -2.5 72Z" /> </svg>
+															</div>
+															<p class="text-only testimonial">Wow</p>
+															<div class="gallery-tag-container">
+																<div class="tag">
+																	<div class="tag-image"> <img src="fonts/avatar5.svg" alt> </div>
+																	<div class="tag-text">
+																		<p class="small-bold">Jane</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="gallery-slide text-only-slide">
+															<div class="horizontal-gallery-cut cricut-green">
+																<svg viewBox="0 0 356 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<ellipse cx="321" cy="-124.378" rx="200" ry="194.595" /> </svg>
+															</div>
+															<p class="text-only testimonial">Swift delivery</p>
+															<div class="gallery-tag-container">
+																<div class="tag">
+																	<div class="tag-image"> <img src="fonts/avatar3.svg" alt> </div>
+																	<div class="tag-text">
+																		<p class="small-bold">Rachel</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="gallery-slide text-only-slide">
+															<div class="horizontal-gallery-cut shamrock">
+																<svg viewBox="0 0 356 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path d="M-17 -64L-11.762 43.021C-11.762 43.021 0.0560417 68.9999 34.4537 69C99.5458 69.0003 95.7067 10.3955 193.316 21.5951C265.738 29.9048 240.882 -64 240.882 -64H-17Z" fill="#FAC3BE" /> </svg>
+															</div>
+															<p class="text-only testimonial-small">Speedy fixes</p>
+															<div class="gallery-tag-container">
+																<div class="tag">
+																	<div class="tag-image"> <img src="fonts/avatar1.svg" alt> </div>
+																	<div class="tag-text">
+																		<p class="small-bold">Kendra</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div>
+														<div class="gallery-slide text-only-slide">
+															<div class="horizontal-gallery-cut forest">
+																<svg viewBox="0 0 356 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<ellipse cx="321" cy="-124.378" rx="200" ry="194.595" /> </svg>
+															</div>
+															<p class="text-only testimonial-small">Very responsive and quick to meet needs</p>
+															<div class="gallery-tag-container">
+																<div class="tag">
+																	<div class="tag-image"> <img src="fonts/avatar4.svg" alt> </div>
+																	<div class="tag-text">
+																		<p class="small-bold">Kaitlyn</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="gallery-bottom grid-container">
+										<div class="scrollbar-container">
+											<div class="scrollbar"></div>
+										</div>
+										<div class="gallery-buttons">
+											<button class="gallery-previous" aria-label="Previous slide" data-ga-events="{" eventCategory ":"Click ","eventAction ":"Click ","eventLabel ":"joy-testimonials-arrow ","eventNonInteractionHit ":"FALSE ","event ":"gaEvent "}">
+												<svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.5303 6.53033C15.8232 6.23744 15.8232 5.76256 15.5303 5.46967L10.7574 0.696698C10.4645 0.403805 9.98959 0.403805 9.6967 0.696698C9.40381 0.989592 9.40381 1.46447 9.6967 1.75736L13.9393 6L9.6967 10.2426C9.40381 10.5355 9.40381 11.0104 9.6967 11.3033C9.98959 11.5962 10.4645 11.5962 10.7574 11.3033L15.5303 6.53033ZM6.55671e-08 6.75L15 6.75L15 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="black" /> </svg>
+											</button>
+											<button class="gallery-next" aria-label="Next slide" data-ga-events="{" eventCategory ":"Click ","eventAction ":"Click ","eventLabel ":"joy-testimonials-arrow ","eventNonInteractionHit ":"FALSE ","event ":"gaEvent "}">
+												<svg width="16" height="12" viewBox="0 0 16 12" xmlns="http://www.w3.org/2000/svg">
+													<path d="M15.5303 6.53033C15.8232 6.23744 15.8232 5.76256 15.5303 5.46967L10.7574 0.696698C10.4645 0.403805 9.98959 0.403805 9.6967 0.696698C9.40381 0.989592 9.40381 1.46447 9.6967 1.75736L13.9393 6L9.6967 10.2426C9.40381 10.5355 9.40381 11.0104 9.6967 11.3033C9.98959 11.5962 10.4645 11.5962 10.7574 11.3033L15.5303 6.53033ZM6.55671e-08 6.75L15 6.75L15 5.25L-6.55671e-08 5.25L6.55671e-08 6.75Z" fill="black" /> </svg>
+											</button>
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="bundles">
+								<div class="wrapper">
+									<div class="bundle-feature grid-container">
+										<div class="bundle-feature-content">
+											<h3>Handyman Packages</h3>
+											<p class="p2">Price based on needs</p>
+											<p class="small">Personalized handyman services</p> <a class="pill-button black ">Book</a> </div>
+										<div class="bundle-feature-image"> <img src="images/hammer.png" alt="Cricut Joy"> </div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script type="text/x-magento-init"> { "*": { "Magento_Ui/js/core/app": { "components": { "storage-manager": { "component": "Magento_Catalog/js/storage-manager", "appendTo": "", "storagesConfiguration" : {"recently_viewed_product":{"requestConfig":{"syncUrl":"https:\/\/cricut.com\/en_us\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"recently_compared_product":{"requestConfig":{"syncUrl":"https:\/\/cricut.com\/en_us\/catalog\/product\/frontend_action_synchronize\/"},"lifetime":"1000","allowToSendRequest":null},"product_data_storage":{"updateRequestConfig":{"url":"https:\/\/cricut.com\/en_us\/rest\/en_us\/V1\/products-render-info"},"requestConfig":{"syncUrl":"https:\/\/cricut.com\/en_us\/catalog\/product\/frontend_action_synchronize\/"},"allowToSendRequest":null}} } } } } }</script>
+		<script type="text/javascript">
+		window.wpLazyLoad = window.wpLazyLoad || {};
+		window.wpLazyLoad.effect = "fadeIn";
+		window.wpLazyLoad.effectspeed = 1000;
+		window.wpLazyLoad.imageloader = "https://dj8a12g4tkdh0.cloudfront.net/staticfiles/version1624897265/frontend/Cricut/Rally/en_US/WeltPixel_LazyLoading/images/Loader.gif";
+		window.wpLazyLoad.threshold = "0";
+		require(['jquery', 'WeltPixel_LazyLoading/js/jquery_lazyload'], function($) {
+			$("img.lazy").lazyload({
+				effect: "fadeIn",
+				effectspeed: 1000,
+				imageloader: "https://dj8a12g4tkdh0.cloudfront.net/staticfiles/version1624897265/frontend/Cricut/Rally/en_US/WeltPixel_LazyLoading/images/Loader.gif"
+			});
+		});
+		</script>
+		<div data-mage-init="{" CricutCustomer_Customer/js/surfacedCricutId ": {}}"></div>
+	</div>
+	<script>
+	require(['jquery', 'weltpixel_persistentLayer', 'weltpixel_gtm', 'Magento_Customer/js/customer-data'], function($, wpPersDl, wpgtm, customerData) {
+		$(document).ajaxComplete(function(event, xhr, settings) {
+			if(settings.url.search('/customer\/section\/load/') > 0) {
+				var response = xhr.responseJSON;
+				if(response.gtm) {
+					var dataLayerData = $.parseJSON(response.gtm.datalayer);
+					for(index in dataLayerData) {
+						window.dataLayer.push(dataLayerData[index]);
+					}
+				}
+			}
+		});
+		var wpPersDlOptions = {
+			'storageExpiryTime': 30
+		};
+		var wpGtmOptions = {
+			'enabled': 0,
+			'persDataLayer': wpPersDl
+		};
+		wpPersDl.init(wpPersDlOptions);
+		wpgtm.trackPromotion(wpGtmOptions);
+	});
+	</script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.7.0/firebase-analytics.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+		  const loadEl = document.querySelector('#load');
+		  // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+		  // // The Firebase SDK is initialized and available here!
+		  //
+		  // firebase.auth().onAuthStateChanged(user => { });
+		  // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+		  // firebase.firestore().doc('/foo/bar').get().then(() => { });
+		  // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+		  // firebase.messaging().requestPermission().then(() => { });
+		  // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+		  // firebase.analytics(); // call to activate
+		  // firebase.analytics().logEvent('tutorial_completed');
+		  // firebase.performance(); // call to activate
+		  //
+		  // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  
+		  try {
+			let app = firebase.app();
+			let features = [
+			  'auth', 
+			  'database', 
+			  'firestore',
+			  'functions',
+			  'messaging', 
+			  'storage', 
+			  'analytics', 
+			  'remoteConfig',
+			  'performance',
+			].filter(feature => typeof app[feature] === 'function');
+			loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+		  } catch (e) {
+			console.error(e);
+			loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+		  }
+		});
+	  </script>
+</body>
+
+</html>
